@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Reproduced by Muhammad Bilal
+% github.com/mbilalai/resume
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Muhammad Bilal} & Email : \href{mailto:mbilalai24@gmail.com}{mbilalai24@gmail.com}\\
+  \href{https://github.com/mbilalai}{github.com/mbilalai} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Science and Technology}{Islamabad, Pakistan}
+      {Master of Science in Robotics and Intelligent Machines Engineering.}{Aug. 2020 -- April. 2021}
+    \resumeSubheading
+      {Comsats University, Islamabad}{Islamabad, Pakistan}
+      {Bachelor of Science in Electrical Engineering.}{Sep. 2015 -- July. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Upwork}{Freelance}
+      {Computer Vision/Robotics Engineer}{Sep 2019 - Present}
+      \begin{vspacing}
+      
+      {\href{https://www.upwork.com/freelancers/~0179789c82e254cfbf}{\small Profile}}
+      
+      \end{vspacing}
+      \resumeItemListStart
+        \resumeItem{Automated Danger Area Detection}
+          {Detection of areas feasible to work, and danger areas by using the real-time CCTV feed.
+          
+          Semantic segmentation: For crowds of containers/people.
+          
+          Keypoint detection: For detecting workers and their spatial points.
+          
+          object detection: Detecting possible object regions.}
+        
+        \resumeItem{Liveness Detection}
+          {Development of a micro-service that performs accurate presentation attack detection. Techstack used includes AWS cloud services like: Rekognition, S3, Lambda, API Gateway.}
+          
+           \resumeItem{Medical Imaging: Retinal tortuosity classification}
+          {Binary classification of an eye disease in which eye vessels and their shapes changes in size/width/diameter etc. 
+          
+          Retinal segmentation using U-Net deep learning architecture and classification using binary cross-entropy.}
+          
+        \resumeItem{Autonomous multi-drone exploration}
+          {Simulated environment using ROS/Gazebo. Development of effective algorithms based on swarm intelligence for path planning and collaborative behavior of multiple systems to autonomously explore and map prospecting environments, also solve collision avoidance for multiple UAV's.}
+        \resumeItem{Drone Take-off}
+        {Train the drone to take-off in Gazebo until a given height(6m). 
+        
+        Later to be deployed on Pixhawk/PX4 controller using betaflight.}
+          
+          \resumeItem{RL codebase migration}
+          {Migration from the TF-Agents RL training setup to stable-baselines3.
+          
+          Implementation of three Multi-Agent RL Algorithms within the designed framework using the stable-baselines3 library.
+          
+          Algorithms: Proximal policy optimization(PPO), Action-Critic(A2C), Deep Deterministic Policy Gradients(DDPG).}
+          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sabhi.org}{Islamabad, PK}
+      {Machine Learning Engineer}{Oct 2021 - March 2022}
+            \begin{vspacing}
+      
+      { \href{https://www.sabhi.org/}{\small Company Website}}
+      
+      \end{vspacing}
+     
+      \resumeItemListStart
+        \resumeItem{Face/Liveness Detection}
+          {A micro-service to verify the input facial image/video of the user to be real or spoof. 
+          
+          The workload involved model training(online/offline),deployment,and monitoring.}
+        \resumeItem{Document Verification}
+          {A micro-service to verify the user documents, primarily (National Identity card).
+          
+          Tech-stack used included:
+          
+          Bounding-box detection for capturing the fields.
+          
+          Optical-character-recognition(OCR) for text-recognition. 
+          
+          Object Detection and Facial recognition for the image on the document.}
+        
+      \resumeItemListEnd
+
+   % \resumeSubheading
+     % {Digicom Solutions}{Rawalpindi, PK}
+      %{Machine Learning Intern}{Sep 2019 - Nov 2019}
+      %\resumeItemListStart
+       % \resumeItem{Traffic Simulator}
+    %      {Developed Reinforcement Learning based Traffic Monitoring System using Python and SUMO simulator.}
+     %   \resumeItem{Rice breed classification}
+      %    {Rice Breed classification using OpenCV and Deep learning.}
+      \resumeItemListEnd
+
+ % \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Text-Recognizer application}
+      {Detection of hand-written text using OCR and deploying it as a Gradio Demo.
+      
+      The project was part of the full-stack deep learning course found \href{https://fullstackdeeplearning.com/course/}{here}}
+    \resumeSubItem{Self Driving Car}
+      {Building a jetson-nano based self driving car that drives autonomously on a track like the \href{https://aws.amazon.com/deepracer/}{AWS DeepRacer}}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, C++, RUST}
+     \hfill
+     \textbf{Technologies}{: Pytorch, Pytorch-lightning, AWS, ROS.}
+   }
+ \resumeSubHeadingListEnd
+ 
+%-------------------------------------------
+\end{document}
